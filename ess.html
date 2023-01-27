@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <!-- h1 -->
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <!-- h2 -->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="body" style="background-color: #fff;">
+    <!-- <div class="progress">
+        <ul>
+            <span class="sideline"></span>
+            <li> <a href="#Overview" class="clickable">Overview</a> </li>
+            <li> <a href="#DesignProcess" class="clickable">Design Process</a> </li>
+            <li> <a href="#UserInterviews" class="clickable">User Interviews</a> </li>
+            <li> <a href="#UserGoal" class="clickable">User Goal</a> </li>
+            <li> <a href="#Ideation" class="clickable">Ideation</a> </li>
+            <li> <a href="#FinalDesign" class="clickable">Final Design And Spec</a> </li>
+            <li> <a href="#Reflections" class="clickable">Reflections</a> </li>
+        </ul>
+    </div> -->
+    <section id="title">
+        <h1>Employee Scheduling Software</h1>
+        <h4>@ Directorate General Of Highways,
+            Taiwan Ministry Of Transportation And Communications</h4>
+        <img src="img/ess/cover.png" alt="">
+    </section>
+    <section id="Overview">
+        <div class="col pd-r-24">
+            <h3>Overview</h3>
+            <span>Our primary goal was to transform the paper-based process of managing the work schedules of
+                government
+                contractors into an electronic document management system.
+
+                The system was designed to enable three main actions, <b>(1) contractors can create their schedules;
+                    (2)
+                    the
+                    government can verify the schedules; (3) supervisors can access the system for
+                    government/contractors to
+                    track contractors’/employees’ absence records.</b></span>
+        </div>
+        <div class="col pd-l-24">
+            <h3>Timeline</h3>
+            <span>3 month</span>
+            <h3>Team</h3>
+            <span>1 Project Manager, 1 UX/UI designer and Front-end developer, 1 Back-end Developer, 1 Back-end
+                Engineer</span>
+            <h3>My Role</h3>
+            <span>Main UI/UX design, Front-end engineering</span>
+        </div>
+    </section>
+    <section class="over-h" id="DesignProcess">
+        <h3>Design Process</h3>
+        <img src="img/ess/dp.jpeg" alt="">
+    </section>
+    <section id="UserInterviews">
+        <h3>User Interviews</h3>
+        <span>We set up multiple one-on-one sessions with three key users (two government employees who verified the
+            shift schedules and monthly absences and one contractor/scheduler responsible for creating new schedules) to
+            learn how they did their work and what challenges they encountered during the process. The findings later
+            became a reference during the ideation process. We came up with a user flow for each process per role and a
+            few proposals for the main functions.</span>
+        <img src="img/ess/ui1.jpeg" alt="The Correlation Between Multiple Users">
+        <div class="imgtext"><span>The Correlation Between Multiple Users</span></div>
+        <img src="img/ess/ui2.jpeg" alt="Previous Paper-based working Process">
+        <div class="imgtext"><span>Previous Paper-Based Working Process</span></div>
+    </section>
+    <section id="UserGoal">
+        <h3>User Goal</h3>
+        <ul>
+            <li><b>Government Employees:</b> Ensure all the schedules abide by the law and the construction finishes
+                on time.
+            </li>
+            <li><b>Contractors’ Schedulers:</b> Arrange the schedule efficiently and manage employee attendance.</li>
+            <li><b>Contractors:</b> Meet requests for time off.</li>
+            <h4>Problems</h4>
+            <span>Government Employees</span>
+            <ul>
+                <li>Spent a significant amount of time communicating with schedulers about problems with their shift
+                    arrangements.</li>
+
+                <li>Kept track of and made sure all schedules were submitted on time.</li>
+
+                <li>Were precisely examining all the schedules monthly using Excel, which was time-consuming because
+                    each project followed different shift patterns based on laws, e.g., two-week institution, four-week
+                    institution.</li>
+            </ul>
+
+            <span>Contractors (Schedulers)</span>
+            <ul>
+                <li>Users accidentally edited the finished schedules, making spreadsheets prone to errors after the
+                    examination.</li>
+
+                <li>Schedulers needed to spend more time dealing with employees’ collective agreements than planning
+                    their
+                    schedules because everyone had different requests for time off.</li>
+            </ul>
+            <span> Meanwhile, from the interviews, we know that users are afraid of:</span>
+            <ul>
+                <li>Adapting to a new system would require a significant learning curve.</li>
+
+                <li>Important work materials might mistakenly be deleted.</li>
+            </ul>
+        </ul>
+    </section>
+    <section id="Ideation">
+        <h3>Ideation</h3>
+        <h4>Design Objectives And Direction</h4>
+        <li>Reduce Compliance Issues </li>
+        <div class="flex">
+            <div class="flex-2-1 mg-24"><span>Objective: Foster collaboration and transparency among schedulers and contract
+                    employees; empower
+                    employees with faster responses to their time-off requests and fair overtime.</span></div>
+            <div class="flex-2-1 mg-24"> <span>Solution: People associated with the process had role-based system log ins. We
+                    provided
+                    different
+                    permissions based on different roles.</span></div>
+        </div>
+        <li>Cut Down Scheduling Time </li>
+        <div class="flex">
+            <div class="flex-2-1 mg-24"> <span>Objective: Reduce schedulers’ time spent dealing with the schedules and prevent
+                    duplication of
+                    efforts.</span></div>
+            <div class="flex-2-1 mg-24"> <span>Solution: Automatic detection of conflicts like overlapping shifts or minimum
+                    rest periods to
+                    eliminate
+                    the use of error-prone spreadsheets.</span></div>
+        </div>
+        <li>Improve Usability</li>
+        <div class="flex">
+            <div class="flex-2-1 mg-24"><span>Objective: Ensure users could achieve defined goals effectively even if they
+                    were new to
+                    technology.</span></div>
+            <div class="flex-2-1 mg-24"><span>Solution: Minimize significant behavior changes compared to what users were
+                    previously accustomed
+                    to doing in Excel.</span></div>
+        </div>
+        <h4>Expected Journey Map</h4>
+        <span>Whenever I encounter projects with various users and different goals, I create a journey map and
+            the task
+            flow of the primary goals in the system; both can help me map out the entire process. </span>
+        <img src="img/ess/ejm.jpeg" alt="Expected Journey Map">
+        <span>Then, using the journey map, I can go deeper into what they need to do to achieve the primary
+            goals.</span>
+        <h4>Task Flow</h4>
+        <span>The flow shows the steps users will take to get to a specific goal or endpoint, ensuring that I
+            design
+            sequentially and thoroughly, which can help me distinguish who is in charge of different phases.
+            Moreover, I
+            can check details to make the system better. It acts as a precursor to designing potentially complex
+            user
+            flows. </span>
+        <img src="img/ess/tf.jpeg" alt="Task Flow">
+        <h4>Wireframe</h4>
+        <span>I place the emphasis on what information should I request them to add in each section to this
+            system.
+        </span>
+        <img src="img/ess/wf.jpeg" alt="Wireframe">
+        <span>When I have listed out all the necessary information, I organize it into understandable, clear,
+            and
+            intuitive data. I additionally need to make sure the design is user-centric so that multiple users
+            can
+            complete their goals effortlessly.</span>
+        <h4>Information Architecture</h4>
+        <img src="img/ess/ia.jpeg" alt="Information Architecture">
+        <h4>Design Style Guide</h4>
+        <img src="img/ess/dsg.jpeg" alt="Design Style Guide">
+    </section>
+    <section id="FinalDesign">
+        <h3>Final Design And Spec</h3>
+        <h4>Iteration Of The Adding Schedule Process</h4>
+        <span>We tried multiple methods for the schedule management process and allowed potential users to directly edit
+            on LiveServer. Finally, with limited time, I coded both prototypes.
+
+            At first, we came up with a dropdown selection method since contractors often unconsciously edited the
+            schedules and created version control problems. This method required choosing the right item precisely to
+            edit and confirm, making schedules less prone to errors. However, the approach was inconvenient (needed two
+            steps for each schedule) and it was hard to distinguish a day shift from a night shift (without colors).
+
+            In my second attempt, I designed the color-picking method. This method is much similar to how they edited on
+            the EXCEL previously. (video display below) </span>
+        <h4>Set Up All The Information Needed To Add The Schedule</h4>
+        <ol>
+            <li>To design correct interactions, buttons are important. We distinguish links and buttons. Links are used
+                for
+                navigating to another place, and buttons are used for performing an action. We set up different styles
+                between them.</li>
+            <li>Since there are multiple information formats, I used table structure in this adding information page.
+                For
+                consistency and ease of understanding, we match the alignment of headings to the alignment of the data
+                and
+                make the text aligned left in every table.</li>
+        </ol>
+        <img src="img/ess/final1.jpeg" alt="">
+        <ol>
+            <li>Since the law regulation has limited the maximum working hours each week, we designed the label to
+                distinguish one week from the other. If there is a national holiday, the label will turn red on the day.
+            </li>
+            <li>Horizontal and vertical scroll for them to edit the schedule more flexibly.</li>
+            <li>Whenever they save the schedule. Our system will check and notify problems.</li>
+        </ol>
+        <img src="img/ess/final2.jpeg" alt="">
+    </section>
+    <section id="Reflections">
+        <h3>Reflections</h3>
+        <div class="over-h">
+            <div class="col-1 pd-r-24">
+                <h4>Learn more about how to use Javascript to create function features</h4>
+            </div>
+            <div class="col-2 pd-l-24">
+                <span>I have learned to implement a table on the front end of an application with sorting, filtering,
+                    and
+                    pagination functions. I also developed a color-pick selection function.
+                    Initially, I would look up libraries and ensure they had everything I needed, which is certainly a
+                    viable option. Unfortunately, the libraries often do not match the design or requirements of
+                    specific cases,
+                    and have many features that I do not need. Consequently, a better option sometimes is to implement
+                    it
+                    independently to have complete flexibility over functionality and design. </span>
+                <div class="bottomline"></div>
+            </div>
+        </div>
+        <div class="over-h">
+            <div class="col-1 pd-r-24">
+                <h4>Experiencing a full design process for a new platform from ideation to launch</h4>
+            </div>
+            <div class="col-2 pd-l-24">
+                <span><b>My Role in This Project</b><br>
+                    I acted as a designer and front-end developer at the same time in this project. The truth is that it
+                    is
+                    not always cost-effective for one person to do a project from scratch. Conflicts may arise between
+                    the two
+                    roles. Sometimes, I knew that the design idea I had come up with would be time-consuming, which cost
+                    me
+                    a lot of time and effort to balance. However, I realize that possessing relevant background in both
+                    areas is truly helpful; it allows me to
+                    communicate well with the team and clients. Moreover, such a role benefits my design outcomes
+                    because I
+                    can incorporate the transitions and effects that best complement the design.<br>
+                    <div class="bottomline"></div>
+                    <b>A Design guideline is needed</b><br>
+                    Although I standardized some design formats, such as the typography, font sizes, colors, inputs, and
+                    buttons, I feel there are still many reusable components that I should organize, including the login
+                    page, the navigation bar, and the tables. In this way, we could save a lot of time communicating
+                    with clients
+                    by merely showing all types of designs for them to assemble and build any application, which can
+                    also
+                    establish the style for our company.
+                    <div class="bottomline"></div>
+                </span>
+            </div>
+        </div>
+        <div class="over-h">
+            <div class="col-1 pd-r-24">
+                <h4>Final thoughts</h4>
+            </div>
+            <div class="col-2 pd-l-24">
+                <span>After finishing every project, I am always questioning whether my design did
+                    create
+                    the
+                    best solution, and sometimes it is quite hard to answer the question. Initially, working with the
+                    government frustrated me
+                    strongly. The project partners were new to digital products and had limited knowledge of creating
+                    good
+                    system experiences. However, I later realized that instead of being a problem-solving designer, I
+                    should
+                    think and act like a supporter to help and guide public servants tackle those challenges and better
+                    understand the problem rather than provide them with an immediate solution. As a designer, there is
+                    definitely no optimal solutions in design, yet with limited time and resource, I believed that we
+                    had
+                    come up with the best solution at that time.</span>
+            </div>
+        </div>
+    </section>
+    <!-- partial -->
+    <script src='js/jquery.min.js'></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src='js/splitting.min.js'></script>
+    <script src='js/gsap.min.js'></script>
+    <script src='js/ScrollTrigger.min.js'></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
