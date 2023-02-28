@@ -1,0 +1,61 @@
+.container {
+  height: 400px;
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.border {
+  height: 380px;
+  width: 380px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+.border:hover {
+  border: 2px solid #068952;
+}
+.card {
+  height: 400px;
+  width: 400px;
+  background: #808080;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.card0 {
+  background: url("../img/pic.jpeg") center center no-repeat;
+  background-size: 400px;
+}
+.card0:hover {
+  background: url("../img/pic.jpeg") right center no-repeat;
+  background-size: 600px;
+}
+.card0:hover h2 {
+  opacity: 1;
+}
+.fa {
+  color: #068952;
+  margin-right: 10px;
+}
+.introduction {
+  width: 600px;
+}
+h2 {
+  color: #fff;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+h4 {
+  font-family: "Crimson Text", serif;
+  font-size: 18px;
+}

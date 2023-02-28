@@ -11,6 +11,7 @@ function throttle(fn, wait) {
 }
 
 function scroll_cb() {
+  console.log("a");
   var scroll = $(window).scrollTop();
   var addClassOnScroll = function () {
     var windowTop = $(window).scrollTop();
@@ -28,22 +29,24 @@ function scroll_cb() {
   addClassOnScroll();
 }
 
-$(document).ready(function () {
-   window.addEventListener("scroll", throttle(scroll_cb, 100));
-  $(window).scroll(function () {
-    var scroll = $(window).scrollTop();
-    var doc = $(document).height();
-    var win = $(window).height();
-    var value =
-      (scroll / (doc - win)) *
-      90; /* this value will varie in function of your page height*/
-    $("ul .sideline").css("height", value + "%");
-  });
-  $("a.clickable").click(function () {
-    $("a.current").removeClass("current");
-    $(this).addClass("current");
-  });
-});
+// $(document).ready(function () {
+//    window.addEventListener("scroll", throttle(scroll_cb, 100));
+//   $(window).scroll(function () {
+//     var scroll = $(window).scrollTop();
+//     var doc = $(document).height();
+//     var win = $(window).height();
+//     console.log(doc);
+//     console.log(win);
+//     var value =
+//       (scroll / (doc - win)) *
+//       90; /* this value will varie in function of your page height*/
+//     $("ul .sideline").css("height", value + "%");
+//   });
+//   $("a.clickable").click(function () {
+//     $("a.current").removeClass("current");
+//     $(this).addClass("current");
+//   });
+// });
 // side menu end
 
 // right side project scroll
@@ -111,13 +114,11 @@ document.onkeydown = function (evt) {
   let isEscape = false;
   if ("key" in evt) {
     isEscape = evt.key === "Escape" || evt.key === "Esc";
-    console.log("a");
   } else {
     isEscape = evt.keyCode === 27;
     console.log("b");
   }
   if (isEscape) {
-    console.log("c");
     body.classList.remove("active");
     setTimeout(() => {
       iframe.setAttribute("src", "");
@@ -191,7 +192,6 @@ gsap.to("body", {
 
 document.addEventListener("DOMContentLoaded", function () {
   body.classList.add("loaded");
-  console.log("c");
 });
 
 // Set a delay on Scrolltrigger recalculation to accommodate element transition times
