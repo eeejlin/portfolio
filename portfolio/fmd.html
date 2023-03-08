@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <!-- h1 -->
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <!-- h2 -->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="body" style="background-color: #fff;">
+    <!-- <div class="progress">
+        <ul>
+            <span class="sideline"></span>
+            <li> <a href="#Overview" class="clickable">Overview</a> </li>
+            <li> <a href="#DesignProcess" class="clickable">Design Process</a> </li>
+            <li> <a href="#UserInterviews" class="clickable">User Interviews</a> </li>
+            <li> <a href="#UserGoal" class="clickable">User Goal</a> </li>
+            <li> <a href="#Ideation" class="clickable">Ideation</a> </li>
+            <li> <a href="#FinalDesign" class="clickable">Final Design And Spec</a> </li>
+            <li> <a href="#Reflections" class="clickable">Reflections</a> </li>
+        </ul>
+    </div> -->
+    <section id="title">
+        <h1>Factory Monitoring Dashboard</h1>
+        <h4>@ Taiwan Power Company, Tatan Power Plant
+            (Taiwan's Largest Natural Gas-Fired Combined-Cycle Power Plant)</h4>
+    </section>
+    <section id="Overview">
+        <div>
+            <img class="mg-0" src="img/fmd/cover-1.jpeg" alt="cover">
+            <img class="mg-t10" src="img/fmd/cover-2.png" alt="cover">
+        </div>
+        <div class="col pd-r-24">
+            <h3>Overview</h3>
+            <span>Our primary goal was to enhance factory management, with this dashboard being one part of a larger
+                system. It manages people and car flow, contractors, construction, and access control.</span>
+        </div>
+        <div class="col pd-l-24">
+            <h3>Timeline</h3>
+            <span>2 month</span>
+            <h3>Team</h3>
+            <span>1 Project Manager, 1 UX/UI designer and Front-end developer, 1 Back-end Developer</span>
+            <h3>My Role</h3>
+            <span>Main UI/UX design, Front-end engineeringg</span>
+        </div>
+    </section>
+    <section id="UserInterviews">
+        <h3>User Interviews</h3>
+        <span>The project integrated disconnected data and progress into the system by interviewing multiple users and
+            discussing client needs.</span>
+    </section>
+    <section id="UserGoal">
+        <h3>Define</h3>
+        <span>Based on interviews, we defined users, their motivations, tasks, and context of use (chart design shown
+            below). Managers are the main users who require immediate and effective control of factory operations. They
+            use a tablet computer while patrolling the factory, relying on data to assist their work. </span>
+    </section>
+    <section id="Ideation">
+        <h3>Ideation</h3>
+        <span>Dashboards provide a quick overview of crucial information for users and enable easy navigation to areas
+            requiring attention. To design the dashboard, we identified essential elements and classified data into
+            three parts.</span>
+        <ol>
+            <li>Car Flow: Hourly car flow statistics to prevent parking shortages.</li>
+            <li>Employees: Monitor employee statuses and overtime requests.</li>
+            <li>Contractors: Track contractor details by factory department.</li>
+        </ol>
+        <div>
+            <img class="mg-0 mg-t-24" src="img/fmd/IA-1.jpeg" alt="Information Architecture">
+            <img class="mg-t10" src="img/fmd/IA-2.jpeg" alt="Information Architecture">
+        </div>
+    </section>
+    <section id="FinalDesign">
+        <h3>Prototyping</h3>
+        <div>
+            <img src="img/fmd/DH-1.png" alt="Design Highlights">
+            <div>
+                <h4>Design Highlights: Clear Design</h4>
+                <span>To prevent user distraction from complex data, unnecessary styling was avoided. Contrasting colors
+                    were used to distinguish classifications while maintaining readability. Consistent naming
+                    conventions were followed to minimize confusion.</span>
+            </div>
+        </div>
+        <div>
+            <img src="img/fmd/DH-2.png" alt="Design Highlights">
+            <div>
+                <h4>Design Highlights: The Right Chart Type For Different Data.</h4>
+                <span>We identified the purpose of each piece of information to choose the appropriate chart type and
+                    x-axis value. For example, a line chart with time as the x-axis was used for car flow. We also
+                    considered details such as the quantity of values and display options for each type of information
+                    to avoid misinterpretation of data. </span>
+            </div>
+        </div>
+        <div>
+            <img src="img/fmd/DH-3.jpeg" alt="Design Highlights">
+            <div>
+                <h4>Design Highlights: Reload The Page Every Five Minute</h4>
+                <span>Real-time information must update automatically for the dashboard to display current resources and
+                    status. Unlike other systems where users log in and out, the dashboard serves as an immediate
+                    control tool.</span>
+            </div>
+        </div>
+    </section>
+    <section id="Reflections">
+        <h3>Reflections</h3>
+        <div class="over-h">
+            <div class="col-1 pd-r-24">
+                <h4>The Balance Between Client And User Experiences</h4>
+            </div>
+            <div class="col-2 pd-l-24">
+                <span>Conflicts can arise when working with government decision makers whose desires contrast with user
+                    needs or our design. In these instances, it's difficult to determine who is right, and the
+                    development process can become a continual struggle until someone concedes for the sake of
+                    completing the project. Ultimately, someone must hold authority over decisions. As a designer, I
+                    strive to balance goals and desires, but when it doesn't work out, trust and respect are crucial. I
+                    must believe that everyone shares the same objective of improving the product, even if we see things
+                    from different perspectives.</span>
+                <div class="bottomline"></div>
+            </div>
+        </div>
+        <div class="over-h">
+            <div class="col-1 pd-r-24">
+                <h4>Challenges With The Programming Dashboard</h4>
+            </div>
+            <div class="col-2 pd-l-24">
+                <span><b>Cookie Settings</b><br>
+                    Our system uses token-based authentication for better efficiency than storing tokens on the user's
+                    end. However, this method poses a risk as attackers with the key can access all user data. To
+                    mitigate this, our system requires users to access the Intranet and use factory-provided devices. I
+                    gained knowledge on cookies, sessions, and authentication during this project. I integrated settings
+                    and verified the cookie function on each page before loading information.
+                    <br>
+                    <div class="bottomline"></div>
+                    <b>“Apexchart” Plugin Implementation</b><br>
+                    Customizing plugins to enhance the user experience was challenging, but I created several essential
+                    functions not included in the original plugin. This involved reading documentation and coding the
+                    design. For instance, I modified the bar chart plugin with a scrollbar on the x-axis and fixed bar
+                    width to accommodate hundreds of values.
+                    <div class="bottomline"></div>
+                </span>
+            </div>
+        </div>
+        <div class="over-h">
+            <div class="col-1 pd-r-24">
+                <h4>Challenges In Dashboard Design</h4>
+            </div>
+            <div class="col-2 pd-l-24">
+                <span><b>Definition of the Purpose of the Dashboard</b><br>
+                    Designing dashboards for multiple enterprises with unique requirements has taught me that a clear
+                    purpose is essential for a smooth design process. Identifying the purpose is the crucial first step
+                    in every new project. <br>
+                    <div class="bottomline"></div>
+                    <b>Detailed Considerations</b><br>
+                    Improving the dashboard design process is a continuous learning experience as it's easy to overlook
+                    details. When attempting to standardize the process, I faced challenges as the data can vary in
+                    small details, making decision-making complicated due to too many simultaneous factors to consider.
+                    <div class="bottomline"></div>
+                    <b>Responsive Web Design</b><br>
+                    Creating a block dashboard that appears visually appealing on all devices is challenging. Designers
+                    must ensure that all words and values are displayed clearly with sufficient margins, without any
+                    distortion of the width or height.
+                    <div class="bottomline"></div>
+                </span>
+            </div>
+        </div>
+        <div class="over-h">
+            <span>Designing dashboards is both enjoyable and challenging. Each project offers a unique challenge and
+                learning opportunity, while the next dashboard design always presents a new mountain to conquer.</span>
+        </div>
+    </section>
+    <!-- partial -->
+    <script src='js/jquery.min.js'></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src='js/splitting.min.js'></script>
+    <script src='js/gsap.min.js'></script>
+    <script src='js/ScrollTrigger.min.js'></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
