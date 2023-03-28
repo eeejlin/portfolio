@@ -3,7 +3,6 @@
   width: 80vw;
   display: flex;
   justify-content: space-around;
-  align-items: center;
   margin: 0 auto;
 }
 .border {
@@ -58,4 +57,7 @@ h2 {
 h4 {
   font-family: "Crimson Text", serif;
   font-size: 18px;
+}
+h5 {
+  color: #068952;
 }

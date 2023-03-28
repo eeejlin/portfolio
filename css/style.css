@@ -715,7 +715,7 @@ body #frame .frame-container iframe {
   left: 25px;
   width: calc(100% - 20px);
   height: calc(100% - 20px);
-  background: #fff;
+  /* background: #fff; */
   border-radius: 5px;
   visibility: hidden;
   -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
@@ -727,7 +727,7 @@ body #frame .frame-container iframe {
     -webkit-clip-path 0s linear;
   transition-delay: 0.75s, 0.75s, 1.25s;
   opacity: 0;
-  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5); */
 }
 body:hover #cursor {
   opacity: 1;
@@ -1365,7 +1365,7 @@ body section h3 {
   padding: 40px 0;
 }
 #body {
-  max-width: 840px;
+  max-width: 900px;
   margin:0 auto;
 
 }
